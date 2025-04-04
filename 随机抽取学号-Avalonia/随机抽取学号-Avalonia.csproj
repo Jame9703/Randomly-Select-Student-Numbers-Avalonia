@@ -10,6 +10,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\HarmonyOS_Sans_SC_Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="Fonts\HarmonyOS_Sans_SC_Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.2.6" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.6" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="11.2.6" />
@@ -17,7 +25,12 @@
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.2.6" />
     <PackageReference Include="Irihi.Ursa" Version="1.10.0" />
     <PackageReference Include="Irihi.Ursa.Themes.Semi" Version="1.10.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
     <PackageReference Include="Semi.Avalonia" Version="11.2.1.6" />
     <PackageReference Include="SukiUI" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
   </ItemGroup>
 </Project>

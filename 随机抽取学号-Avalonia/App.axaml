@@ -4,11 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:semi="https://irihi.tech/semi"
     xmlns:sukiUi="clr-namespace:SukiUI;assembly=SukiUI"
-    xmlns:u-semi="https://irihi.tech/ursa/themes/semi">
+    xmlns:ursa-semi="https://irihi.tech/ursa/themes/semi">
     <!--  "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options.  -->
     <Application.Styles>
         <semi:SemiTheme Locale="zh-CN" />
-        <u-semi:SemiTheme Locale="zh-CN" />
-        <sukiUi:SukiTheme ThemeColor="Blue" />
+        <ursa-semi:SemiTheme Locale="zh-CN" />
+        <sukiUi:SukiTheme Locale="zh-CN" ThemeColor="Blue" />
     </Application.Styles>
+	<Application.Resources>
+		<ResourceDictionary>
+			<FontFamily x:Key="DefaultFontFamily">avares://随机抽取学号-Avalonia/Fonts/HarmonyOS_Sans_SC_Medium.ttf#HarmonyOS Sans SC</FontFamily>
+		</ResourceDictionary>
+	</Application.Resources>
 </Application>

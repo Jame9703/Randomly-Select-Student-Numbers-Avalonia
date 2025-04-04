@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ursa="https://irihi.tech/ursa"
     xmlns:vm="clr-namespace:随机抽取学号_Avalonia.ViewModels"
     d:DesignHeight="450"
     d:DesignWidth="800"
@@ -18,16 +19,51 @@
     </Design.DataContext>
 
     <Grid>
-        <Grid Height="40" VerticalAlignment="Top">
-            <Image
-                Width="30"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center"
-                Source="/Assets/RSSN-Logo.png" />
-            <TextBlock Text="随机抽取学号"  Margin="30,5,0,0" FontFamily="{StaticResource HarmonyOSSans}"/>
-			<TextBlock Text="Randomly Select Student Numbers" Margin="30,15,0,0"/>
-        </Grid>
-
+        <ursa:SelectionList>
+            <ursa:SelectionListItem>
+                <StackPanel>
+                    <Image />
+                    <TextBlock Text="a" />
+                </StackPanel>
+            </ursa:SelectionListItem>
+            <ursa:SelectionListItem>
+                <TextBlock Text="a" />
+            </ursa:SelectionListItem>
+            <ursa:SelectionListItem>
+                <TextBlock Text="a" />
+            </ursa:SelectionListItem>
+            <ursa:SelectionListItem>
+                <TextBlock Text="a" />
+            </ursa:SelectionListItem>
+            <ursa:SelectionList.Indicator>
+                <Border Background="Transparent" CornerRadius="4">
+                    <Border
+                        Width="4"
+                        Margin="0,8"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Stretch"
+                        Background="{DynamicResource SemiBlue6}"
+                        CornerRadius="4" />
+                </Border>
+            </ursa:SelectionList.Indicator>
+            <ursa:SelectionList.ItemTemplate>
+                <DataTemplate>
+                    <Panel Height="40">
+                        <TextBlock
+                            Margin="8,0"
+                            VerticalAlignment="Center"
+                            Classes.Active="{Binding $parent[u:SelectionListItem].IsSelected, Mode=OneWay}"
+                            Text="{Binding}">
+                            <TextBlock.Styles>
+                                <Style Selector="TextBlock.Active">
+                                    <Setter Property="Foreground" Value="{DynamicResource SemiOrange6}" />
+                                </Style>
+                            </TextBlock.Styles>
+                        </TextBlock>
+                    </Panel>
+                </DataTemplate>
+            </ursa:SelectionList.ItemTemplate>
+        </ursa:SelectionList>
         <TextBox
             Width="200"
             Height="30"
