@@ -19,7 +19,7 @@
     </Design.DataContext>
 
     <Grid>
-        <ursa:SelectionList>
+        <!--<ursa:SelectionList>
             <ursa:SelectionListItem>
                 <StackPanel>
                     <Image />
@@ -63,7 +63,7 @@
                     </Panel>
                 </DataTemplate>
             </ursa:SelectionList.ItemTemplate>
-        </ursa:SelectionList>
+        </ursa:SelectionList>-->
         <TextBox
             Width="200"
             Height="30"
