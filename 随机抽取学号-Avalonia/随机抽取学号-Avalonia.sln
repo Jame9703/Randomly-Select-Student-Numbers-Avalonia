@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "随机抽取学号-Avalonia", "随机抽取学号-Avalonia.csproj", "{F7C62448-4038-CE57-82C1-FEFCE5A90039}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "随机抽取学号-Avalonia.Desktop", "..\随机抽取学号-Avalonia.Desktop\随机抽取学号-Avalonia.Desktop.csproj", "{69702D55-785C-836C-770A-14D089D773A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "随机抽取学号-Avalonia.iOS", "..\随机抽取学号-Avalonia.iOS\随机抽取学号-Avalonia.iOS.csproj", "{A5536498-9EF6-8FAF-91C5-F418B72A5FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SukiUI", "C:\Users\蒋怡鑫\Desktop\SukiUI-main\SukiUI-main\SukiUI\SukiUI.csproj", "{9E3539B6-26FB-CE2A-2064-A62BCDEF6C1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{A5536498-9EF6-8FAF-91C5-F418B72A5FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5536498-9EF6-8FAF-91C5-F418B72A5FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5536498-9EF6-8FAF-91C5-F418B72A5FF1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9E3539B6-26FB-CE2A-2064-A62BCDEF6C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3539B6-26FB-CE2A-2064-A62BCDEF6C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3539B6-26FB-CE2A-2064-A62BCDEF6C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3539B6-26FB-CE2A-2064-A62BCDEF6C1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
